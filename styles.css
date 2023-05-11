@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI';
+}
+
+body {
+  display: grid;
+  place-items: center;
+}
+
+h2 {
+  margin: 30px 0;
+}
+
+.cards {
+  width: 300px;
+  border: 1px solid rgba(211, 211, 211, 0.548);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  margin: 10px;
+}
+
+.cards:hover {
+  box-shadow: 0px 20px 50px -10px rgba(0, 0, 0, 0.2);
+}
+.cards img {
+  width: 210px;
+  margin-top: 20px;
+  transition: 0.4s;
+}
+
+.cards img:hover {
+  transition: 0.4s;
+  transform: rotate(10deg) scale(1.2);
+}
+
+.product-detail {
+  color: grey;
+  padding: 0 14px;
+}
+
+.product-cost {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.buy-btn {
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 15px;
+  font-weight: 500;
+}
+
+.product-color {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  border: 2px dotted lightgray;
+  padding: 8px 20px;
+  border-radius: 40px;
+}
+
+.product-color span {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 4px;
+  transition: 0.5s;
+}
+
+.product-color span:hover {
+  transition: 0.5s;
+  transform: scale(1.7);
+}
+
+#red {
+  background-color: crimson;
+}
+#black {
+  background-color: black;
+}
+#orange {
+  background-color: #fe7427;
+}
+.buy-btn {
+  cursor: pointer;
+}
